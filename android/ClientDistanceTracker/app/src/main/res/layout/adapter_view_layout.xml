@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="horizontal"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="100">
+
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50">
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:gravity="center"
+            android:text="TextView2"
+            android:textColor="#171616"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="30dp"
+            android:layout_below="@+id/textView2"
+            android:gravity="center"
+            android:text="TextView3"
+            android:textColor="#171515"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="50">
+
+        <Button
+            android:id="@+id/textView7"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:text="Del"
+            android:onClick="confirm_delete"
+            android:textAlignment="center"
+            app:backgroundTint="#F44336" />
+
+        <Button
+            android:id="@+id/textView8"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_weight="50"
+            android:gravity="center"
+            android:onClick="add_visit"
+            android:text="Add"
+            android:textAlignment="center"
+            app:backgroundTint="#4CAF50" />
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
